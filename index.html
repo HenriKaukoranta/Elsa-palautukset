@@ -1,7 +1,16 @@
 <html>
 <body>
-<head>Otsikko</head>
+<head>
 <title>Otsikko</title>
+<style>
+    .myDiv{
+        border: green;
+        background-color: darkblue;
+        text-align: center;
+        -webkit-text-fill-color: white;
+    }
+</style>
+</head>
 <p>Tyhjällä tagilla ei ole päätetagia</p> <!--Miten tyhjän tagin käyttö eroaa muiden tagien käytöstä?
 -->
 <p>Case sensitivellä tarkoitetaan, että kirjoitusasu täytyy olla sama, esim salasanoissa isot ja pienet kirjaimet</p> <!--Mitä Case sensitive tarkoitta?-->
@@ -9,13 +18,26 @@
 <h2>Keski</h2>
 <h3>Pienempi</h3>
 <p>Tämä on kappale, paragraph tagilla</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Salpaus-logo-alateksti-rgb-oranssi300.jpg/375px-Salpaus-logo-alateksti-rgb-oranssi300.jpg" alt="Salpaus">
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Salpaus-logo-alateksti-rgb-oranssi300.jpg/375px-Salpaus-logo-alateksti-rgb-oranssi300.jpg" alt="Salpaus"> <!--näin lisätään kuva-->
 <ol>
-<li>Tämä</li>
+<li>Tämä</li> <!--tämä on numeroitu lista-->
 <li>on</li>
 <li>lista</li>
 </ol>
+<a href="https://www.salpaus.fi/">Salpaus</a> <!--tämä on linkki salpauksen sivuille-->
+<a href="C:\Users\eduhenrikau\kooditeht\htmltehtävä\portfolio.html">portfolio</a>
+<div class="myDiv">
+    <h1>Testailua</h1>
+</div>
 
+<h2>Lomake</h2>
+<form>
+<label for="Etunimi">Etunimi</label>
+<input type="text" id="Etunimi" name="Etunimi" value="">
+<label for="Sukunimi">Sukunimi</label>
+<input type="text" id="Sukunimi" name="Sukunimi" value="">
+<label for="Ikä">Ikä</label>
+<input type="text" id="Ikä" name="Ikä" value="">
+</form>
 </body>
 </html>
