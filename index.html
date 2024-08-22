@@ -21,6 +21,9 @@
         color: darkblue;
     }
 </style>
+<script>
+    function myFunction() {document.getElementById("teksti2").innerHTML = "Näin se muuttui"} //tämä liittyy nappulaan joka muuttaa tekstiä
+</script>
 </head>
 <p>Tyhjällä tagilla ei ole päätetagia</p> <!--Miten tyhjän tagin käyttö eroaa muiden tagien käytöstä?
 -->
@@ -49,5 +52,10 @@
 <label for="Ikä">Ikä</label>
 <input type="text" id="Ikä" name="Ikä" value="">
 </form>
+
+<p id="teksti">Tämän tekstin väri muuttuu nappulaa painamalla</p>
+<button type="button" onclick="document.getElementById('teksti').style.color = 'green'">Paina</button> 
+<p id="teksti2">Tässä teksti muuttuu nappia painamalla</p>
+<button type="button" onclick="myFunction().getElementById('teksti2')">Kokeile</button>
 </body>
 </html>
