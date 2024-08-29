@@ -21,10 +21,12 @@
         color: darkblue;
     }
 </style>
+
 <script>
     function myFunction() {document.getElementById("teksti2").innerHTML = "Näin se muuttui"} //tämä liittyy nappulaan joka muuttaa tekstiä
 </script>
 </head>
+
 <p>Tyhjällä tagilla ei ole päätetagia</p> <!--Miten tyhjän tagin käyttö eroaa muiden tagien käytöstä?
 -->
 <p>Case sensitivellä tarkoitetaan, että kirjoitusasu täytyy olla sama, esim salasanoissa isot ja pienet kirjaimet</p> <!--Mitä Case sensitive tarkoitta?-->
@@ -32,18 +34,23 @@
 <h2>Keski</h2>
 <h3>Pienempi</h3>
 <p>Tämä on kappale, paragraph tagilla</p>
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Salpaus-logo-alateksti-rgb-oranssi300.jpg/375px-Salpaus-logo-alateksti-rgb-oranssi300.jpg" alt="Salpaus"> <!--näin lisätään kuva-->
+
 <ol>
 <li>Tämä</li> <!--tämä on numeroitu lista-->
 <li>on</li>
 <li>lista</li>
 </ol>
+
 <a href="https://www.salpaus.fi/">Salpaus</a> <!--tämä on linkki salpauksen sivuille-->
 <a href="C:\Users\eduhenrikau\kooditeht\htmltehtävä\portfolio.html">portfolio</a>
+
 <div class="myDiv">
     <h1>Testailua</h1>
 </div>
 <h2>Lomake</h2>
+
 <form>
 <label for="Etunimi">Etunimi</label>
 <input type="text" id="Etunimi" name="Etunimi" value="">
@@ -62,10 +69,54 @@
 <p id="teksti2">Tässä teksti muuttuu nappia painamalla</p>
 <button type="button" onclick="myFunction().getElementById('teksti2')">Kokeile</button>
 <hr>
+
 <h3>var, let ja const</h3>
 <p>var, let ja const ovat tapoja määritellä muuttujia. var oli ensimmäinen tapa määritellä muuttujia. Se on funktion laajuinen, mikä tarkoittaa, että se on näkyvissä vain funktion sisällä, jossa se on määritelty.
     let on lohko laajuinen, eli se on näkyvissä vain sen lohkon sisällä, jossa se on määritelty. const toimii tavalla kuin let, mutta sitä käytetään määritältäessä muuttujia, joiden arvo ei tule muuttumaan. const-muuttajan arvo ei voi muuttua sen määrittleyn jälkeen.
 </p>
+
+<h3>Täysi-ikäisyys?</h3>
+<input id="age" value="18" />
+<button onclick="myFunction1()">Testaa</button>
+<p id="demo"></p>
+<script>
+    function myFunction1() {
+        let age = document.getElementById("age").value;
+        let voteable = (age < 18) ? "alaikäinen":"täysi-ikäinen";
+        document.getElementById("demo").innerHTML = " Olet " + voteable;
+    }
+</script>
+
+<h3>Huhuu -looppi</h3>
+
+<p id="demo1"></p>
+
+<script>
+    let text ="";
+    let i = 0
+    while (i < 5) {
+        text += "<br>Huhuu!"; //tämä on looppi
+        i++;
+    }
+    document.getElementById("demo1").innerHTML = text;
+</script>
+
+<h3>For -looppi</h3>
+
+<p id="demo3"></p>
+
+<script>
+    const eläimet = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"]
+    let fLen = eläimet;
+
+    let text = "<ul>";
+    for (let i = 0; i < fLen; i++) {
+        text += "<li>" + eläimet[i] + "</li>";
+    }
+    text += "</ul>" ;
+
+    document.getElementById("demo3").innerHTML = text;
+</script>
 
 </body>
 </html>
