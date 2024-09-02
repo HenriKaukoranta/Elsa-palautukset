@@ -22,6 +22,8 @@
     }
 </style>
 
+<!-- <link rel="stylesheet" href="tyylit.css"> tällä tavalla linkität erillisen css tiedoston-->
+
 <script>
     function myFunction() {document.getElementById("teksti2").innerHTML = "Näin se muuttui"} //tämä liittyy nappulaan joka muuttaa tekstiä
 </script>
@@ -102,6 +104,18 @@
 </script>
 
 <h3>For -looppi</h3>
+
+<p id="demo2"></p>
+
+<script>
+const array =["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+for (let i = 0; i < array.length; i++) {
+    array[i] += "!";
+}
+document.getElementById("demo2").innerHTML = array;
+console.log(array);
+
+</script>
 
 </body>
 </html>
