@@ -110,11 +110,19 @@
 <script>
 const array =["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
 for (let i = 0; i < array.length; i++) {
-    array[i] += "!";
+    array[i] += "!" + "<br>";
 }
 document.getElementById("demo2").innerHTML = array;
 console.log(array);
+</script>
 
+<h3>Nimi funktio</h3>
+
+<p id="demo3"></p>
+
+<script>
+const person = {firstName:"Henri ", lastName:"Kaukoranta"};
+document.getElementById("demo3").innerHTML = text="Hei " + person.firstName + person.lastName;
 </script>
 
 </body>
