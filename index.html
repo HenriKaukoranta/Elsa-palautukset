@@ -117,9 +117,25 @@ for (let i = 0; i < array.length; i++) {
 </script>
 
 <h3>Nimi funktio</h3>
-<!-- tee tähän formi josta funktio saa nimet-->
+
+<form>
+    <label for="Etunimi">Etunimi</label>
+    <input type="text" id="enimi" name="Etunimi" value="">
+    <br>
+    <label for="Sukunimi">Sukunimi</label>
+    <input type="text" id="snimi" name="Sukunimi" value="">
+    <br>
+    <button onclick="tulostaNimi()">Tulosta nimi</button>
+    </form>
+
+<p id="tuloste"></p>
+
+<script>
+document.getElementById("enimi").value;
+document.getElementById("snimi").value;
+
+function tulostaNimi(enimi, snimi);
 
 </script>
-
 </body>
 </html>
