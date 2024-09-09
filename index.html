@@ -17,6 +17,7 @@
     body{
         background-color: lightblue;
         text-align: center;
+        list-style-position: inside;
         font-family: Tahoma;
         color: darkblue;
     }
@@ -97,7 +98,7 @@
     let text ="";
     let i = 0
     while (i < 5) {
-        text += "<br>Huhuu!"; //tämä on looppi
+        text += "Huhuu?!<br>"; //tämä on looppi
         i++;
     }
     document.getElementById("demo1").innerHTML = text;
@@ -105,24 +106,19 @@
 
 <h3>For -looppi</h3>
 
-<p id="demo2"></p>
+<ul id="demo2"></ul>
 
 <script>
 const array =["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+const arrayele = document.getElementById("demo2")
 for (let i = 0; i < array.length; i++) {
-    array[i] += "!" + "<br>";
+    arrayele.innerHTML += "<li>" + array[i] + "!</li>";
 }
-document.getElementById("demo2").innerHTML = array;
-console.log(array);
 </script>
 
 <h3>Nimi funktio</h3>
+<!-- tee tähän formi josta funktio saa nimet-->
 
-<p id="demo3"></p>
-
-<script>
-const person = {firstName:"Henri ", lastName:"Kaukoranta"};
-document.getElementById("demo3").innerHTML = text="Hei " + person.firstName + person.lastName;
 </script>
 
 </body>
