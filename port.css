@@ -1,0 +1,61 @@
+.myDiv {
+    display:none;
+    border-color: black;
+    border-style: solid;
+    background-color: gray;
+    text-align: center;
+}
+
+.myDiv {
+  margin-left: 50px;
+}
+
+.myDiv {
+    transition-delay: 1s;
+}
+
+#omakuva {
+  float: right;
+  margin-right: 300px;
+  margin-top: 100px;
+}
+
+#otsikko1 {
+  margin-top: 75px;
+  margin-left: 75px;
+}
+
+#otsikko2:hover + .myDiv {
+  display:block;
+  width: 500px
+}
+
+#otsikko2 {
+      margin-top: 25px;
+      margin-left: 75px;
+}
+
+body {
+    background-color: darkolivegreen;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: gray
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: darkslategrey;
+}
