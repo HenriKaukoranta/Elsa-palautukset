@@ -118,24 +118,21 @@ for (let i = 0; i < array.length; i++) {
 
 <h3>Nimi funktio</h3>
 
-<form>
-    <label for="Etunimi">Etunimi</label>
-    <input type="text" id="enimi" name="Etunimi" value="">
-    <br>
-    <label for="Sukunimi">Sukunimi</label>
-    <input type="text" id="snimi" name="Sukunimi" value="">
-    <br>
-    <button onclick="tulostaNimi()">Tulosta nimi</button>
-    </form>
-
+<input id="enimi" value="" />
+<input id="snimi" value="" />
+<button onclick="tulosteFunktio()">Nimi:</button>
 <p id="tuloste"></p>
-
 <script>
-document.getElementById("enimi").value;
-document.getElementById("snimi").value;
-
-function tulostaNimi(enimi, snimi);
-
+    function nimiFunktio(etunimi, sukunimi) {
+        return etunimi + " " + sukunimi;   
+    }
+    function tulosteFunktio() {
+        const etunimi = document.getElementById("enimi").value;
+        const sukunimi = document.getElementById("snimi").value;
+        const nimi = nimiFunktio(etunimi, sukunimi);
+        document.getElementById("tuloste").innerHTML = "Hei " + nimi;
+    }
 </script>
+
 </body>
 </html>
