@@ -1,0 +1,115 @@
+body#etusivu {
+    background-image: url("top-view-burger-orange-background_23-2148235104.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body#menu {
+    background-image: url("flat-lay-burgers-with-copy-space_23-2148234989.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body#catering {
+    background-image: url("top-view-burgers-frame-with-orange-background_23-2148235004.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body#yhteydenotto {
+    background-image: url("flat-lat-burger-with-cherry-tomatoes_23-2148235016.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body {
+    font-family: 'Broadway', sans-serif;
+}
+
+#otsikko1 {
+    text-align: center;
+    margin-top: 225px;
+    font-size: 90px;
+}
+
+#div1 {
+    line-height: 2;
+    letter-spacing: 1,7px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 100px;
+    padding: 15px;
+    width: 500px;
+    background-color:gold
+}
+
+#bursat {
+    line-height: 2;
+    letter-spacing: 1,7px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 100px;
+    padding: 15px;
+    width: 500px;
+    background-color:gold
+}
+
+.otsikko3 {
+    padding-left: 25px;
+}
+
+#otsikko2 {
+    padding-left: 250px;
+    text-align: left;
+    margin-top: 150px;
+    font-size: 90px;
+}
+
+.overlay {   
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden; 
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+}}
