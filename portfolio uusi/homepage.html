@@ -1,0 +1,56 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henri Kaukoranta</title>
+    <link rel="stylesheet" href="tyylit1.css">
+    <body id="homepage">
+    </head>
+<body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="homepage.html">Etusivu</a>
+    <a href="education.html">Koulutus</a>
+    <a href="hobbies.html">Harrastukset</a>
+    <a href="contactme.html">Yhteydenotto</a>
+    </div>
+
+    <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span>
+    </div>
+      
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+      
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+    }
+</script>
+
+<div id="kuva">
+    <img id="omakuva" width="300px" src="profiili.png" alt ="omakuva">
+</div>
+
+<div id="mainpage">
+<p id="alku">Hei, minä olen</p>
+<h1 id="nimi">Henri Kaukoranta</h1>
+    <div id="jatke">
+    <p>Ensimmäisen vuoden ohjelmistokehittäjä opiskelija Koulutuskeskus Salpauksesta. Tällä hetkellä opiskeluni keskittyvät HTML:n, CSS:n ja Javascriptin saloihin. Tavoitteenani on valmistua pikimiten ja päästä työelämään mahdollisimman pian.</p>
+    </div>
+</div>
+
+<div id="some">
+    <img id="github" width="50px" height="50px" src="github.png" alt="github">
+    <img id="youtube" width="50px" height="50px" src="youtube.png" alt="youtube">
+    <img id="instagram" width="50px" height="50px" src="instagram.png" alt="instagram">
+    <img id="linkedin" width="50px" height="50px" src="linkedin.png" alt="linkedin">
+    <img id="twitter" width="50px" height="50px" src="twitter.png" alt="twittwe">
+</div>
+
+</body>
+</html>

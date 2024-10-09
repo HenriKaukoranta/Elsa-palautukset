@@ -1,0 +1,172 @@
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+body {
+    background-image: url("bluebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    color: lightblue
+}
+
+#alku {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#nimi {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 75px;
+}
+
+#jatke {
+    text-shadow: 2px 2px 4px #000000;
+    max-width: 550px;
+}
+
+#mainpage {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  width: fit-content;
+  margin-top: 125px;
+  margin-left: 200px;
+  padding-inline: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#kuva {
+  float: right;
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  margin-right: 220px;
+  margin-top: 75px;
+  padding-inline: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#koulutus {
+    margin-left: 175px;
+    margin-top: 200px;
+}
+
+#koulutuslista {
+    margin-left: 150px;
+}
+
+#diploma {
+  float: right;
+  margin-right: 400px;
+  margin-top: 150px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+#some {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  margin-left: 650px;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: fit-content
+}
+
+#github:hover {
+  opacity: 0.7;
+}
+
+#youtube:hover {
+  opacity: 0.7;
+}
+
+#instagram:hover {
+  opacity: 0.7;
+}
+
+#twitter:hover {
+  opacity: 0.7;
+}
+
+#linkedin:hover {
+  opacity: 0.7;
+}

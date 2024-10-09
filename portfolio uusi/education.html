@@ -1,0 +1,48 @@
+<html></html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koulutus</title>
+    <link rel="stylesheet" href="tyylit1.css">
+    <body id="education">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homepage.html">Etusivu</a>
+        <a href="education.html">Koulutus</a>
+        <a href="hobbies.html">Harrastukset</a>
+        <a href="contactme.html">Yhteydenotto</a>
+        </div>
+    
+        <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span>
+        </div>
+          
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+          
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+<img id="diploma" width="350px" src="C:\Users\eduhenrikau\Downloads\7dd1f1fe25a35a789542c8984d67d8bf.png" alt ="diploma">
+
+    <h1 id="koulutus">Koulutukseni:</h1>
+    <div id="koulutuslista">
+    <ul>
+        <li>Kannaksen lukio - Ylioppilas (2012)</li>
+        <li>Lahden Ammattikorkeakoulu - Tradenomi (keskeytynyt)</li>
+        <li>Koulutuskeskus Salpaus - Ohjelmistokehittäjä (nyt)</li>
+    </ul>
+
+
+</div>
+</body>
+</html>
