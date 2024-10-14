@@ -100,6 +100,24 @@ body {
   padding-bottom: 50px;
 }
 
+#koulutukset {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  width: fit-content;
+  margin-top: 150px;
+  margin-left: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#koulutus {
+  font-size: 60px;
+}
+
 #kuva {
   float: right;
   background-image: url("solid-navy.jpg");
@@ -111,15 +129,6 @@ body {
   padding-inline: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-#koulutus {
-    margin-left: 175px;
-    margin-top: 200px;
-}
-
-#koulutuslista {
-    margin-left: 150px;
 }
 
 #diploma {
