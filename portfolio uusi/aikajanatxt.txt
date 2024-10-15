@@ -1,3 +1,16 @@
 https://codepen.io/bcarvalho/pen/RZqmZX
 
 aikajana
+
+vanha education:
+
+<img id="diploma" width="350px" src="C:\Users\eduhenrikau\Downloads\7dd1f1fe25a35a789542c8984d67d8bf.png" alt ="diploma">
+    <div id="koulutukset">
+    <h1 id="koulutus">My education:</h1>
+    <div id="koulutuslista">
+    <ul>
+        <li>Kannas Highschool - (graduated 2012)</li>
+        <li>Lahti University of Applied Sciences - Bachelor of Business Administration (studies aborted 2019)</li>
+        <li>Koulutuskeskus Salpaus - Software developer (ongoing 2024-)</li>
+    </ul>
+    </div>
