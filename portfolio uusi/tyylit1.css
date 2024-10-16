@@ -26,7 +26,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #001357;
+    background-color: #1d202b;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -148,6 +148,21 @@ body {
   margin: 5px 2px;
 }
 
+#eduotsikko {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  float: left;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: fit-content
+}
+
 #some {
   background-image: url("solid-navy.jpg");
   border-style: solid;
@@ -160,6 +175,19 @@ body {
   padding-right: 15px;
   padding-bottom: 15px;
   width: fit-content
+}
+
+#harrastukset {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  width: 600px;
+  margin-top: 25px;
+  margin-left: 200px;
+  padding-inline: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Social media -buttons opacity changes when hovered */
@@ -282,4 +310,39 @@ body {
 /* setting dot to the right if the card is odd */
 .card:nth-child(even) > .info > .title::before {
   right: -45px;
+}
+
+#pyörä {
+  margin-left: 100px;
+}
+
+#computer {
+  margin-left: 125px;
+}
+
+#kissa {
+  float: right;
+  margin-right: 400px;
+  margin-top: 250px;
+}
+
+#penkki {
+  float: right;
+  margin-right: 100px;
+  margin-top: 600px;
+}
+
+#videogame {
+  float: right;
+  margin-top: 50px;
+}
+
+
+/* pictures enlarge when hovered */
+#pyörä, #computer, #kissa, #penkki, #videogame {
+  transition: transform 0.3s ease-in-out;
+}
+
+#pyörä:hover, #computer:hover, #kissa:hover, #penkki:hover, #videogame:hover {
+  transform: scale(1.2);
 }
