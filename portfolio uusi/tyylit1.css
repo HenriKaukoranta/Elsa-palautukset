@@ -202,6 +202,14 @@ body {
   padding-bottom: 50px;
 }
 
+#harrastukset, #mainpage, .info {
+  transition: transform 0.3s ease-in-out;
+}
+
+#harrastukset:hover, #mainpage:hover, .info:hover {
+  transform: scale(1.2);
+}
+
 /* Social media -buttons opacity changes when hovered */
 #github:hover, #instagram:hover, #twitter:hover, #linkedin:hover {
   opacity: 0.7;
@@ -340,15 +348,6 @@ body {
   padding-bottom: 15px;
 }
 
-/* pictures enlarge when hovered */
-#pyörä, #computer, #kissa, #penkki, #videogame {
-  transition: transform 0.3s ease-in-out;
-}
-
-#pyörä:hover, #computer:hover, #kissa:hover, #penkki:hover, #videogame:hover {
-  transform: scale(1.2);
-}
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -437,3 +436,23 @@ body {
   to {opacity: 1}
 }
 
+#contactmediv {
+  background-image: url("solid-navy.jpg");
+  border-style: solid;
+  border-color:cornflowerblue;
+  border-radius: 25px;
+  width: fit-content;
+  margin-top: 125px;
+  margin-left: 200px;
+  padding-inline: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contactmeheader {
+  font-size: 75px;
+}
+
+#contactmepara {
+  max-width: 400px;
+}
