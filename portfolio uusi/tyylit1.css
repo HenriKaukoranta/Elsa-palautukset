@@ -437,11 +437,12 @@ body {
 }
 
 #contactmediv {
+  display: flex;
   background-image: url("solid-navy.jpg");
   border-style: solid;
   border-color:cornflowerblue;
   border-radius: 25px;
-  width: fit-content;
+  max-width: 1500px;
   margin-top: 125px;
   margin-left: 200px;
   padding-inline: 100px;
@@ -449,10 +450,12 @@ body {
   padding-bottom: 50px;
 }
 
-#contactmeheader {
-  font-size: 75px;
+#contactmepara {
+  flex: 1;
+  margin-right: 25px;
+  max-width: 750px;
 }
 
-#contactmepara {
-  max-width: 400px;
+#form {
+  flex: 2;
 }
