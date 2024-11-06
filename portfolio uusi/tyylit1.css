@@ -202,11 +202,11 @@ body {
   padding-bottom: 50px;
 }
 
-#harrastukset, #mainpage, .info {
+#harrastukset, #mainpage, .info, #contactmediv {
   transition: transform 0.3s ease-in-out;
 }
 
-#harrastukset:hover, #mainpage:hover, .info:hover {
+#harrastukset:hover, #mainpage:hover, .info:hover, #contactmediv:hover {
   transform: scale(1.2);
 }
 
@@ -436,13 +436,20 @@ body {
   to {opacity: 1}
 }
 
+#contactmeheader {
+  font-size: 75px;
+  text-align: center;
+}
+
 #contactmediv {
   display: flex;
+  flex-direction: column;
   background-image: url("solid-navy.jpg");
   border-style: solid;
   border-color:cornflowerblue;
   border-radius: 25px;
-  max-width: 1500px;
+  width: 1500px;
+  height: 600px;
   margin-top: 125px;
   margin-left: 200px;
   padding-inline: 100px;
@@ -450,12 +457,23 @@ body {
   padding-bottom: 50px;
 }
 
-#contactmepara {
-  flex: 1;
+#contactmedivareas {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#headerdiv {
+  flex-grow: 1;
+}
+
+#contactmeparadiv {
+  flex-grow: 1;
+  width: 50%;
   margin-right: 25px;
-  max-width: 750px;
 }
 
 #form {
-  flex: 2;
+  flex-grow: 1;
+  width: 50%;
 }
