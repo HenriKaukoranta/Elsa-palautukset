@@ -74,20 +74,15 @@ body {
     color: lightblue
 }
 
-#alku {
-    text-shadow: 2px 2px 4px #000000;
-}
-
 #nimi {
-    text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
 }
 
 #jatke {
-    text-shadow: 2px 2px 4px #000000;
     max-width: 550px;
 }
 
+/* homepage picture shakes when hovered */
 @keyframes tilt-shaking {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(5deg); }
@@ -145,12 +140,6 @@ body {
   padding-bottom: 50px;
 }
 
-#diploma {
-  float: right;
-  margin-right: 400px;
-  margin-top: 150px;
-}
-
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -202,6 +191,7 @@ body {
   padding-bottom: 50px;
 }
 
+/* divs below expand when hovered */
 #harrastukset, #mainpage, .info, #contactmediv {
   transition: transform 0.3s ease-in-out;
 }
@@ -421,6 +411,7 @@ body {
   transition: background-color 0.6s ease;
 }
 
+/* slideshow dots change color when hovered */
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -441,6 +432,7 @@ body {
   text-align: center;
 }
 
+/* flex used to arrange contactme paragraph and form side by side */
 #contactmediv {
   display: flex;
   flex-direction: column;

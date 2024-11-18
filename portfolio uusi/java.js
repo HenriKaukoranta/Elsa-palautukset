@@ -1,3 +1,4 @@
+// open nav/close nav functions
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -22,7 +23,8 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-    
+
+// image slideshow
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -39,6 +41,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// alert pops up when submitting message in contactme form
 function showAlert() {
   alert("Thank you for contacting me!");
 }
